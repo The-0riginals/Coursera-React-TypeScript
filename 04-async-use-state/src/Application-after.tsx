@@ -13,6 +13,7 @@ const Application = () => {
     fetchHero().then(h => setHero(h));
   }, []);
 
+  ////if hero is not null, then render HeroInformation
   return <main>
     {hero && <HeroInformation hero={hero} />}
   </main>;

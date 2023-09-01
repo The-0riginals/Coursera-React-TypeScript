@@ -13,7 +13,7 @@ export type HeroType = {
   total: number;
 };
 
-export const fetchHero = (): Promise<HeroType> => {
+export const fetchHero = (): Promise<HeroType> => { // promise means that it will return a value in the future
   const [hero] = shuffle(data);
-  return Promise.resolve(hero);
+  return Promise.resolve(hero); 
 };
